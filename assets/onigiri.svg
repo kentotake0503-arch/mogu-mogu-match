@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="おにぎり">
+  <g fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round">
+    <path d="M43.5 18.5
+             C46.6 13.2 54.4 13.2 57.5 18.5
+             L84.5 65.2
+             C87.6 70.5 83.7 77.2 77.5 77.2
+             L23.5 77.2
+             C17.3 77.2 13.4 70.5 16.5 65.2
+             Z"/>
+  </g>
+  <rect x="35" y="49" width="30" height="28.2" fill="currentColor"/>
+</svg>
