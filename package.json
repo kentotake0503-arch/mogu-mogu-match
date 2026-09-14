@@ -1,0 +1,10 @@
+{
+  "name": "mogu-mogu-match",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-blog.mjs",
+    "test:api": "node scripts/test-api.mjs",
+    "deploy": "npm run build && npx wrangler pages deploy outputs --project-name=mogu-mogu-match"
+  }
+}

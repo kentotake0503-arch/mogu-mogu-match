@@ -1,0 +1,28 @@
+# Dependencies and package-manager caches
+node_modules/
+.pnpm-store/
+
+# Local development and Cloudflare state
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+!.env.example
+
+# Codex and QA workspaces
+.agents/
+.codex/
+.qa/
+_qa/
+tmp/
+work/
+
+# Generated distribution archives
+*.zip
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+

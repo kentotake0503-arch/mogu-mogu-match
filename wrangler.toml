@@ -1,0 +1,8 @@
+name = "mogu-mogu-match"
+compatibility_date = "2026-07-06"
+pages_build_output_dir = "outputs"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mogu_mogu_match"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
