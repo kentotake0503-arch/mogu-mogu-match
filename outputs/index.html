@@ -4655,6 +4655,475 @@
       color: #4A4744;
     }
 
+    /* Home redesign: sticker-card entry inspired by the final 3a composition. */
+    body.home-active {
+      background: #EFEBE4;
+      background-image: none;
+    }
+
+    .topbar {
+      align-items: center;
+      gap: 11px;
+      margin: -18px -16px 0;
+      padding: 13px 18px 15px;
+      background: #FFFFFF;
+      backdrop-filter: none;
+    }
+
+    .brand {
+      flex: 1;
+      min-width: 0;
+      min-height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0;
+    }
+
+    .brand-wordmark {
+      display: block;
+      width: 100%;
+      max-width: 210px;
+      height: auto;
+      opacity: 0.82;
+      filter: saturate(0.72);
+    }
+
+    .nav-toggle {
+      flex: 0 0 34px;
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      min-height: 34px;
+      padding: 0;
+      border: 0;
+      border-radius: 11px;
+      color: #FFFFFF;
+      background: #4A4744;
+      box-shadow: none;
+      display: grid;
+      place-items: center;
+    }
+
+    .nav-toggle:hover {
+      transform: none;
+      background: #2E2C2A;
+      box-shadow: none;
+    }
+
+    .nav-lines {
+      width: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .nav-lines i {
+      display: block;
+      width: 14px;
+      height: 2px;
+      margin: 0;
+      padding: 0;
+      border-radius: 2px;
+      background: #FFFFFF;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .home-page,
+    .home-page button,
+    .home-page a {
+      font-family: var(--font-script);
+    }
+
+    .home-page {
+      margin-inline: -16px;
+      grid-template-columns: minmax(0, 1fr);
+      background: #EFEBE4;
+    }
+
+    .home-hero {
+      width: 100%;
+      min-width: 0;
+      height: auto;
+      min-height: 0;
+      display: block;
+      padding: 22px 18px 28px;
+    }
+
+    .home-hero-card {
+      position: relative;
+      min-width: 0;
+      padding: 24px 12px 20px;
+      border: 3px solid #2E2C2A;
+      border-radius: 26px;
+      background: #4A4744;
+      box-shadow: 6px 6px 0 #2E2C2A;
+    }
+
+    .home-duration-badge {
+      position: absolute;
+      top: -11px;
+      right: 12px;
+      z-index: 2;
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 12px;
+      border: 2.5px solid #2E2C2A;
+      border-radius: 999px;
+      color: #4A4744;
+      background: #F3E4DB;
+      box-shadow: 3px 3px 0 #2E2C2A;
+      font: 900 12px/1 var(--font-script);
+      transform: rotate(6deg);
+    }
+
+    .home-duration-badge svg {
+      width: 14px;
+      height: 14px;
+      flex: none;
+      fill: none;
+      stroke: #4A4744;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .home-duration-divider {
+      width: 1.5px;
+      height: 11px;
+      background: rgba(74, 71, 68, 0.3);
+    }
+
+    .home-hero-title {
+      width: calc(100% + 24px);
+      margin: 6px 0 0;
+      margin-left: -12px;
+      color: #FFFFFF;
+      font-family: var(--font-script);
+      font-size: clamp(24px, 8vw, 34px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+      text-align: center;
+      text-shadow: 3px 3px 0 #C08268;
+      white-space: nowrap;
+    }
+
+    .home-character-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .home-hero-character {
+      width: 92px;
+      flex: none;
+      display: grid;
+      place-items: end center;
+    }
+
+    .home-hero-character img {
+      display: block;
+      width: 92px;
+      height: auto;
+      animation: bob 3.4s ease-in-out infinite;
+    }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .home-speech {
+      position: relative;
+      flex: 1;
+      min-width: 0;
+      margin-bottom: 34px;
+      padding: 13px 14px;
+      border: 2.5px solid #2E2C2A;
+      border-radius: 20px;
+      color: #4A4744;
+      background: #FFFFFF;
+      box-shadow: 3px 3px 0 #2E2C2A;
+      text-align: left;
+    }
+
+    .home-speech::before,
+    .home-speech::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+
+    .home-speech::before {
+      left: -13px;
+      bottom: 15px;
+      border-right: 11px solid #2E2C2A;
+    }
+
+    .home-speech::after {
+      left: -9px;
+      bottom: 15px;
+      border-right: 11px solid #FFFFFF;
+    }
+
+    .home-speech-title,
+    .home-speech-copy {
+      margin: 0;
+    }
+
+    .home-speech-title {
+      color: #4A4744;
+      font: 900 16px/1.35 var(--font-script);
+    }
+
+    .home-speech-copy {
+      margin-top: 5px;
+      color: #6F6A64;
+      font: 500 11px/1.5 var(--font-script);
+      white-space: nowrap;
+    }
+
+    .home-primary-action,
+    .button.home-primary-action {
+      width: 100%;
+      min-height: 0;
+      margin-top: 18px;
+      padding: 19px;
+      border: 2.5px solid #2E2C2A;
+      border-radius: 22px;
+      color: #FFFFFF;
+      background: #4A4744;
+      box-shadow: 5px 5px 0 #2E2C2A;
+      font: 900 18px/1 var(--font-script);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .home-primary-action:hover {
+      transform: translateY(-1px);
+      background: #4A4744;
+      box-shadow: 5px 6px 0 #2E2C2A;
+    }
+
+    .home-primary-action:active {
+      transform: translate(2px, 2px);
+      box-shadow: 3px 3px 0 #2E2C2A;
+    }
+
+    .home-primary-arrow {
+      font: 900 20px/1 var(--font-script);
+    }
+
+    .home-invite-context {
+      margin: 12px 2px 0;
+      color: #6F6A64;
+      font: 700 12px/1.55 var(--font-script);
+      text-align: center;
+    }
+
+    .home-returning {
+      width: 100%;
+      display: block;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .home-returning-heading {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 26px 0 12px;
+    }
+
+    .home-returning-title {
+      margin: 0;
+      color: #6F6A64;
+      font: 900 13.5px/1 var(--font-script);
+      white-space: nowrap;
+    }
+
+    .home-returning-line {
+      flex: 1;
+      height: 2px;
+      border-radius: 2px;
+      background: rgba(74, 71, 68, 0.12);
+    }
+
+    .home-quick-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .home-quick-card {
+      min-width: 0;
+      min-height: 116px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 14px 12px;
+      border: 2.5px solid #4A4744;
+      border-radius: 20px;
+      color: #4A4744;
+      box-shadow: 4px 4px 0 #4A4744;
+      cursor: pointer;
+      text-align: left;
+      transition: transform 0.2s var(--mogu-bounce), box-shadow 0.2s ease;
+    }
+
+    .home-quick-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .home-quick-card:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 #4A4744;
+    }
+
+    .home-friend-card { background: #F3E4DB; }
+    .home-mypage-card { background: #E3E9E4; }
+
+    .home-quick-card svg {
+      width: 26px;
+      height: 26px;
+      flex: none;
+      fill: none;
+      stroke: #4A4744;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .home-quick-card-label {
+      margin-top: 8px;
+      color: #4A4744;
+      font: 900 14.5px/1.3 var(--font-script);
+    }
+
+    .home-character-link-area {
+      margin-top: 28px;
+    }
+
+    .home-character-circles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 7px;
+    }
+
+    .home-character-circle,
+    .home-character-more {
+      width: min(62px, calc((100% - 28px) / 5));
+      height: auto;
+      aspect-ratio: 1;
+      flex: none;
+      overflow: hidden;
+      border: 2px dashed rgba(74, 71, 68, 0.3);
+      border-radius: 50%;
+      background: #FFFFFF;
+    }
+
+    .home-character-circle img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+
+    .home-character-more {
+      display: grid;
+      place-items: center;
+      color: #6F6A64;
+      background: rgba(255, 255, 255, 0.75);
+      font: 900 13px/1 var(--font-script);
+    }
+
+    .home-character-banner {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border: 2px dashed rgba(74, 71, 68, 0.3);
+      border-radius: 16px;
+      color: #4A4744;
+      background: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .home-character-banner span:first-child {
+      flex: 1;
+      color: #4A4744;
+      font: 700 12.5px/1.55 var(--font-script);
+    }
+
+    .home-character-banner span:last-child {
+      color: #4A4744;
+      font: 900 18px/1 var(--font-script);
+    }
+
+    .home-below-fold {
+      width: 100%;
+      min-width: 0;
+    }
+
+    @media (max-width: 360px) {
+      .home-hero { padding-inline: 14px; }
+      .home-hero-card { padding-inline: 9px; }
+      .home-hero-character,
+      .home-hero-character img { width: 72px; }
+      .home-character-row { gap: 7px; }
+      .home-speech { padding-inline: 10px; }
+      .home-speech-title { font-size: 14px; }
+      .home-speech-copy { font-size: 9px; }
+    }
+
+    @media (max-width: 999px) {
+      .nav-toggle .nav-lines { display: flex; }
+      .nav-toggle .visually-hidden { display: block; }
+    }
+
+    @media (min-width: 1000px) {
+      .topbar {
+        width: min(calc(100vw - 32px), 1100px);
+        margin-top: -26px;
+        margin-right: 0;
+        margin-left: calc((600px - min(calc(100vw - 32px), 1100px)) / 2 - 16px);
+        padding-inline: 18px;
+        transform: none;
+        box-shadow: 0 0 0 100vmax #FFFFFF;
+        clip-path: inset(0 -100vmax);
+      }
+
+      .home-page {
+        border-right: 1px solid rgba(74, 71, 68, 0.08);
+        border-left: 1px solid rgba(74, 71, 68, 0.08);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .home-hero-character img { animation: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -4686,15 +5155,11 @@
   <div class="app">
     <header class="topbar">
       <a class="brand" href="#" data-nav="home" aria-label="Mogu-Mogu Matchのトップへ">
-        <span class="icon"><i data-lucide="utensils"></i></span>
-        <span class="brand-lockup logo-lockup">
-          <span class="brand-name">Mogu-Mogu Match</span>
-          <span class="brand-kana">モグモグ・マッチ</span>
-        </span>
+        <img class="brand-wordmark" src="assets/logo-wordmark.png" alt="Mogu Mogu Match">
       </a>
       <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">
-        <i data-lucide="menu"></i>
-        <span>ナビを開く</span>
+        <span class="nav-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="visually-hidden">ナビを開く</span>
       </button>
       <nav id="mainNav" class="nav-actions" aria-label="サイト内メニュー">
         <a class="text-link" href="./" data-nav="home">診断する</a>
@@ -4707,26 +5172,23 @@
 
     <main>
       <section id="homeScreen" class="screen active" aria-labelledby="homeTitle">
-        <div class="hero">
-          <div class="hero-main">
-            <div class="logo-lockup hero-logo-lockup">
-              <h1 id="homeTitle">Mogu-Mogu Match</h1>
-              <p class="logo-kana">モグモグ・マッチ</p>
+        <div class="home-page">
+          <section class="home-hero">
+            <div class="home-hero-card">
+              <div class="home-duration-badge" aria-label="20問、約5分">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5M9 12h6M9 16h6"></path></svg>
+                <span>20問</span><span class="home-duration-divider" aria-hidden="true"></span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6M12 2v3M8 6l-2-2M16 6l2-2"></path><circle cx="12" cy="14" r="7"></circle><path d="M12 10v4l3 2"></path></svg>
+                <span>5分</span>
+              </div>
+              <h1 id="homeTitle" class="home-hero-title">食スタイル診断テスト</h1>
+              <div class="home-character-row">
+                <div class="home-hero-character"><img src="assets/char-01.png" alt="ハリネズミのモグキャラ"></div>
+                <div class="home-speech"><p class="home-speech-title">キミはどのタイプ？</p><p class="home-speech-copy">5分であなたのモグキャラがわかる！</p></div>
+              </div>
             </div>
-            <p class="hero-copy">店決めで、もう揉めない。</p>
-            <button id="startButton" class="button wide" type="button">
-              <span>診断をはじめる</span>
-              <i data-lucide="arrow-right"></i>
-            </button>
-            <p class="hero-note">20問・3分</p>
-          </div>
-          <div class="peek" aria-label="モグキャラ16体のプレビュー">
-            <div class="peek-header">
-              <p class="peek-title">Moguchara Preview</p>
-              <a class="text-link" href="?view=types" data-nav="types">モグキャラ一覧を見る</a>
-            </div>
-            <div id="peekGrid" class="peek-grid"></div>
-          </div>
+            <button id="startButton" class="home-primary-action" type="button"><span>診断をはじめる</span><span class="home-primary-arrow" aria-hidden="true">→</span></button>
+          </section>
         </div>
       </section>
 
@@ -5423,6 +5885,7 @@
 
     function renderPeek() {
       const grid = document.getElementById("peekGrid");
+      if (!grid) return;
       grid.innerHTML = TYPE_ORDER.map(code => `
         <div class="peek-tile" aria-hidden="true">
           <img src="${imagePath(code)}" alt="" onerror="this.parentElement.textContent='${code}'">
@@ -6103,6 +6566,7 @@
         }
         state.shareEnabled = share;
         document.body.classList.toggle("result-active", name === "result" && share);
+        document.body.classList.toggle("home-active", name === "home");
         if (name !== "author") document.title = "Mogu-Mogu Match";
         updateNavActive(name);
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6133,29 +6597,74 @@
         screens.home.innerHTML = `
           <div class="home-page">
             <section class="home-hero" aria-labelledby="homeTitle">
-              <div class="home-hero-inner">
-                <div class="logo-lockup home-hero-logo">
-                  <h1 id="homeTitle">Mogu-Mogu Match</h1>
-                  <p class="logo-kana">モグモグ・マッチ</p>
+              <div class="home-hero-card">
+                <div class="home-duration-badge" aria-label="20問、約5分">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h8l4 4v16H6z"></path>
+                    <path d="M14 2v5h5M9 12h6M9 16h6"></path>
+                  </svg>
+                  <span>20問</span>
+                  <span class="home-duration-divider" aria-hidden="true"></span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 2h6M12 2v3M8 6l-2-2M16 6l2-2"></path>
+                    <circle cx="12" cy="14" r="7"></circle>
+                    <path d="M12 10v4l3 2"></path>
+                  </svg>
+                  <span>5分</span>
                 </div>
-                <p class="home-catch">店決めで、もう揉めない。</p>
-                <button id="homeDiagnosisStart" class="button home-primary-action" type="button">
-                  <span>診断をはじめる</span>
-                  <i data-lucide="arrow-right"></i>
-                </button>
-                <p class="home-duration">20問・3分</p>
-                ${invite ? `<p class="home-invite-context">${TYPES[invite.code].name}の友達が、相性診断で待っています</p>` : ""}
-                <div class="home-returning">
-                  <p class="home-returning-title">すでに診断した人は</p>
-                  <div class="home-quick-actions">
-                    <button id="homeFriendStart" class="button secondary" type="button"><i data-lucide="heart-handshake"></i><span>友達と相性を見る</span></button>
-                    <button id="homeGroupStart" class="button secondary" type="button"><i data-lucide="users-round"></i><span>グループで決める</span></button>
+                <h1 id="homeTitle" class="home-hero-title">食スタイル診断テスト</h1>
+                <div class="home-character-row">
+                  <div class="home-hero-character">
+                    <img src="assets/char-01.png" alt="ハリネズミのモグキャラ">
+                  </div>
+                  <div class="home-speech">
+                    <p class="home-speech-title">キミはどのタイプ？</p>
+                    <p class="home-speech-copy">5分であなたのモグキャラがわかる！</p>
                   </div>
                 </div>
-                <button id="homeScrollCue" class="home-scroll-cue" type="button" aria-label="サービスの説明へスクロール">
-                  <i data-lucide="chevron-down"></i>
-                </button>
               </div>
+              <button id="homeDiagnosisStart" class="home-primary-action" type="button">
+                <span>診断をはじめる</span>
+                <span class="home-primary-arrow" aria-hidden="true">→</span>
+              </button>
+              ${invite ? `<p class="home-invite-context">${TYPES[invite.code].name}の友達が、相性診断で待っています</p>` : ""}
+
+              <section class="home-returning" aria-labelledby="homeReturningTitle">
+                <div class="home-returning-heading">
+                  <p id="homeReturningTitle" class="home-returning-title">すでに診断をした人！</p>
+                  <span class="home-returning-line" aria-hidden="true"></span>
+                </div>
+                <div class="home-quick-actions">
+                  <button id="homeFriendStart" class="home-quick-card home-friend-card" type="button">
+                    <svg viewBox="0 0 28 28" aria-hidden="true">
+                      <path d="M9.7 22.5 4.5 17.7C1 14.5 1.3 9.4 4.8 7.2c2.1-1.3 4.9-.9 6.5 1l.7.8.7-.8c1.7-1.9 4.5-2.3 6.6-1 3.5 2.2 3.8 7.3.3 10.5l-5.2 4.8a3.4 3.4 0 0 1-4.7 0Z"></path>
+                      <path d="M17.5 19.8 21 16.6c2.4-2.2 2.2-5.7-.2-7.4"></path>
+                    </svg>
+                    <span class="home-quick-card-label">友達との相性を<br>見てみる！</span>
+                  </button>
+                  <button id="homeMypageStart" class="home-quick-card home-mypage-card" type="button">
+                    <svg viewBox="0 0 28 28" aria-hidden="true">
+                      <circle cx="14" cy="9" r="4"></circle>
+                      <path d="M5.5 23c.8-4.8 4-7.5 8.5-7.5s7.7 2.7 8.5 7.5"></path>
+                    </svg>
+                    <span class="home-quick-card-label">マイページに<br>飛ぶ！</span>
+                  </button>
+                </div>
+              </section>
+
+              <section class="home-character-link-area" aria-label="モグキャラ紹介">
+                <div class="home-character-circles" aria-hidden="true">
+                  <span class="home-character-circle"><img src="assets/char-01.png" alt=""></span>
+                  <span class="home-character-circle"><img src="${imagePath("VFBP")}" alt=""></span>
+                  <span class="home-character-circle"><img src="${imagePath("VFGP")}" alt=""></span>
+                  <span class="home-character-circle"><img src="${imagePath("TFBL")}" alt=""></span>
+                  <span class="home-character-more">+12</span>
+                </div>
+                <a class="home-character-banner" href="?view=types" data-nav="types">
+                  <span>全16キャラのタイプはここから！</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </section>
             </section>
 
             <div class="home-below-fold">
@@ -6239,7 +6748,7 @@
         };
         screens.home.querySelector("#homeDiagnosisStart")?.addEventListener("click", startCurrentDiagnosis);
         screens.home.querySelector("#homeFriendStart")?.addEventListener("click", openFriendFlow);
-        screens.home.querySelector("#homeGroupStart")?.addEventListener("click", openGroupFlow);
+        screens.home.querySelector("#homeMypageStart")?.addEventListener("click", () => navigateMypage(true));
         screens.home.querySelector("#stepDiagnosisButton")?.addEventListener("click", startCurrentDiagnosis);
         screens.home.querySelector("#stepGroupButton")?.addEventListener("click", openGroupFlow);
         screens.home.querySelector("#stepPreviewButton")?.addEventListener("click", () => document.getElementById("groupResultPreview")?.scrollIntoView({ behavior: "smooth", block: "center" }));
